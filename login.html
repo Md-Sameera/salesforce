@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page </title>
+    <style>
+        Body {  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: pink;  
+}  
+button {   
+       background-color: #f5d8ba;   
+       width: 40%;    
+        padding: 15px;   
+        margin: 10px 0px; 
+        border-radius: 20px;  
+        border: 2px solid brown;   
+        cursor: pointer;   
+         }   
+ input[type=text], input[type=password] {   
+        width: 100%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid rgb(34, 41, 34);   
+        box-sizing: border-box;   
+    }  
+ .container {   
+        padding: 25px;   
+        background-color: lightblue;  
+    } 
+        .box{
+            display: grid;
+            grid-template-columns: auto auto;
+            column-gap: 7px;
+            background-repeat: no-repeat;
+            background-color: rgb(219, 223, 233);  
+        }
+        .box1{
+            padding: 20% 5% 0% 5%;
+            width: 85%;
+            text-align: center;
+           /* border: 5px solid rgb(222, 217, 217);
+           box-shadow: 0px 3px 6px rgb(229, 205, 203); */
+           border-radius: 12px;
+
+        }
+        .box2{
+            margin: 20px 5px 10px 0px;
+            padding: 5% 5% 0% 5%;
+            width: 85%;
+            text-align: center;
+           border: 5px solid rgb(222, 217, 217);
+           box-shadow: 1px 3px 6px rgb(229, 205, 203);
+           border-radius: 12px;
+           background-color: rgb(240, 215, 170);
+        }
+        label{
+            padding-right: 70%;
+            font-size: large;
+        }
+        .ab{
+            background-color: #a3d5a5;   
+       width: 40%;    
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: 2px solid black;  
+        cursor: pointer;
+        border-radius: 19px;
+        }
+        button:hover {
+            opacity:1;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    
+<div class="box2">
+    <div>
+        <img src="https://th.bing.com/th/id/R.908151cfcf6f5e62e6d2fc04e8824ae7?rik=edtYzze6mWZhbg&riu=http%3a%2f%2fpluspng.com%2fimg-png%2flogo-salesforce-png-salesforce-logo-1024.png&ehk=qTXBg8ismSsmbPcWUlM7ghkqm5Yau0Bd56rx8c7fhKk%3d&risl=&pid=ImgRaw&r=0 " width="50%">
+    </div>
+    <form>
+            <div class="container">   
+                <label>Username : </label>   
+                <input type="text" placeholder="Enter Username" name="username" >  
+                <label>Password : </label>   
+                <input type="password" placeholder="Enter Password" name="password" >  <br>
+                <button type="submit">Login</button> <br>  
+                <input type="checkbox" checked="checked"> Remember me   &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; 
+                <a href="#">Forgot  password? </a>   
+          
+
+        <!-- <div><b>Don't have an account then SignUp?</b>
+        <button type="submit" class="ls" onClick="login">
+            <a href="form.html"><b>Sign Up</b></a>
+        </button></div> -->
+    </div>  
+    </form>
+    <div>
+        
+        <b>Not a customer ? </b>
+        <button class="ls"> <a href="https://www.salesforce.com/in/form/signup/freetrial-sales/?d=70130000000Enyk">Try For Free</a> </button>
+    </div>
+    <!-- <br> -->
+    <div><p>© 2022 salesforce.com, inc. All rights reserved. | <a href="https://www.salesforce.com/company/privacy/">Privacy</a></p></div>
+    </div>
+    <div class="box1">
+        <h1 >
+        Start your free trial. No credit card required, no software to install.
+       </h1>
+        <p style="color: hsl(217, 10%, 50.8%)">
+            <p>With your trial, you get: </p>
+            <ul type="tick">
+            <li> Preloaded data or upload your own</li>
+            <li>Preconfigured processes, reports, and dashboards</li>
+            <li> Guided experiences for sales reps, leaders, and administrators </li>
+            <li>Online training and live onboarding webinars</li>
+            </ul>
+        </p>
+        <div>
+            <button class="ab">
+                <a href="https://www.salesforce.com/in/form/signup/freetrial-sales/?d=70130000000Enyk">Start free trail</a>
+            </button>
+        </div>
+        <br><br>
+        <img src="https://www.scsrockets.org/wp-content/uploads/2015/08/blue_typing_still.jpg" width="70%">
+       
+    </div>
+</div>
+<!-- <script>
+    function login(){
+        window.location="form.html";
+    }
+</script> -->
+
+</body>
+</html>

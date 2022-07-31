@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page </title>
+    <style>
+        .divider:after,
+        .divider:before {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: #eee;
+        }
+        .box{
+            display: grid;
+            grid-template-columns: auto auto;
+            column-gap: 7px;
+            background-repeat: no-repeat;
+            /* background-color: rgb(19, 55, 154); */
+            background-image: url(https://media.istockphoto.com/photos/magic-butterflies-on-water-picture-id939332932?k=6&m=939332932&s=170667a&w=0&h=GOfqOUdx-xVWwbqsIgBhojonXqC0nHYu72N5LF-OVLs=);
+            background-size: cover;
+        }
+        .box1{
+            padding: 20% 5% 0% 5%;
+            width: 85%;
+            text-align: center;
+           /* border: 5px solid rgb(222, 217, 217);
+           box-shadow: 0px 3px 6px rgb(229, 205, 203); */
+           border-radius: 12px;
+
+        }
+        .box2{
+            margin: 20px 5px 10px 0px;
+            padding: 5% 5% 0% 5%;
+            width: 85%;
+            text-align: center;
+           border: 5px solid rgb(222, 217, 217);
+           box-shadow: 1px 3px 6px rgb(229, 205, 203);
+           border-radius: 12px;
+           background-color: rgb(240, 225, 198);
+        }
+        input,select{
+            border: 2px solid rgb(228, 216, 216);
+            width: 90%;
+            border-radius: 3px;
+            height: 30px;
+        }
+        label{
+            padding-right: 70%;
+            font-size: large;
+        }
+        .ls{
+            width: 27%;
+            text-decoration: none;
+            border: 2px solid rgb(126, 193, 226);
+            background-color: rgb(126, 237, 200);
+            border-radius: 14px;
+            height: 35px;
+            font-size: large;
+        }
+        .ls:hover{
+            opacity: 1;
+            background-color:  rgb(31, 188, 136);
+        }
+        li{
+            font-size: medium;
+        }
+
+        button:hover {
+            opacity:1;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+<div class="box1">
+    <img src="https://www.scsrockets.org/wp-content/uploads/2015/08/blue_typing_still.jpg" width="70%">
+   <h1 >
+    Build enterprise-quality apps fast 
+    to bring your ideas to life
+   </h1>
+    <p style="color: hsl(217, 10%, 50.8%)">
+        <ul>
+        <li>Build apps fast with drag and drop tools</li>
+        <li>Customize your data model with clicks</li>
+        <li>Go further with Apex code</li>
+        <li>Integrate with anything using powerful APIs</li>
+        <li>Stay protected with enterprise-grade security</li>
+        <li>Customize UI with clicks or any leading-edge web framework</li>
+        </ul>
+    </p>
+</div>
+    
+<div class="box2">
+    <form>
+        <div>
+            <img src="https://th.bing.com/th/id/R.908151cfcf6f5e62e6d2fc04e8824ae7?rik=edtYzze6mWZhbg&riu=http%3a%2f%2fpluspng.com%2fimg-png%2flogo-salesforce-png-salesforce-logo-1024.png&ehk=qTXBg8ismSsmbPcWUlM7ghkqm5Yau0Bd56rx8c7fhKk%3d&risl=&pid=ImgRaw&r=0 " width="50%">
+        </div>
+        <div>
+            <h2 style="color: blue;">Sign up for your Salesforce Developer Edition</h2>
+            <p>A full-featured copy of the Platform, for free </p>
+        </div>
+        <br>
+        <div>
+            <label  for="fname"><b>First name*</b></label>
+            <input type="text" id="1" placeholder="EnterFirstName" required />
+        </div><br>
+        <div>
+            <label  for="lname"><b>Last name*</b></label>
+            <input type="text" id="2" placeholder="Enter Last Name" required />  
+        </div>
+        <br>
+        <div >
+            <label for="email"><b>Email*</b></label><br>
+            <input type="text" placeholder="Enter Email" name="email" required>        
+        </div>
+        <br>
+        <div >
+            <label for="role"><b>Role*</b></label><br>
+            <select required>
+                <option>Select your Role</option>
+                <option>Developer</option>
+                <option>Accounts</option>
+                <option>Communications</option>
+                <option>Hardware</option>
+            </select>
+        </div>
+        <br>
+        <div >    
+            <label for="psw"><b>Company*</b></label><br>
+            <input type="text" placeholder="Enter Company" name="psw" required>
+        </div>
+        <br>
+        <div>
+            <label><b>Country/Regionv*</b></label><br>
+            <select required>
+                <option>Select your country</option>
+                <option>pakisthan</option>
+                <option>China</option>
+                <option>India</option>
+            </select>
+        </div>
+        <br>
+        <div >    
+            <label for="psw"><b>Postal Code*</b></label><br>
+            <input type="number" placeholder="Enter Postal Code" name="psw" required>
+        </div>
+        <br>
+        <div>    
+            <label for="psw"><b>User Name *</b></label><br>
+            <input type="email" placeholder="Ex: User@s " name="psw" required>
+        </div>
+        <br>
+        <div><p>Your username must be in the form of an email address (it does not have to be real). It must be unique and cannot be associated with another Salesforce login credential. <a href="https://help.salesforce.com/s/articleView?language=en_US&type=5&id=sf.basics_intro_usernames_passwords.htm">Read more about username recommendations.</a></p></div>
+        <div >
+            <input type="checkbox" checked="checked">Subscribe to our newsletter
+        </div>
+
+        <div><p>By registering, you confirm you have read and agree to the<a href="https://trailblazer.me/terms">Terms of Use </a>and the<a href="https://www.salesforce.com/content/dam/web/en_us/www/documents/legal/salesforce_Developer_MSA.pdf"> Main Services Agreement </a>and to the storing and processing of your personal data by Salesforce as described in the<a href="https://www.salesforce.com/company/privacy/"> Privacy Statement</a>,including use for marketing purposes.</p></div>
+
+        <input placeholder="SignUp" type="submit" src="https://www.salesforce.com/in/?ir=1" class="ls"> </input>
+
+        <div>
+            <br>
+        <b>or sign up with:</b>
+        <br>
+        <button>
+            <a href="https://www.google.com/"><img width="20px" src="https://th.bing.com/th/id/OIP.HG6XtzIxf4Nbo_vZt8T3EAHaHa?pid=ImgDet&rs=1" alt=""></a>
+        </button>
+        <button>
+            <a href="https://www.facebook.com/"><img width="20px" src="https://pngimg.com/uploads/facebook_logos/facebook_logos_PNG19757.png"></a>
+        </button>
+        <button>
+            <a href="https://www.twitter.com/"><img src="https://th.bing.com/th/id/R.9a3a06f78cc0a8d79fce59e2de6da146?rik=nLAu3Z%2f0QUb%2fVw&riu=http%3a%2f%2ficons.iconarchive.com%2ficons%2fiynque%2fios7-style%2f1024%2fTwitter-icon.png&ehk=eD3Hc5yQAyP3AKPJoYHB8yeWKwKdaVAswR5kxmodex4%3d&risl=&pid=ImgRaw&r=0" width="20px" alt=""></a>
+        </button>
+        <button>
+            <a href="https://www.github.com/"><img width="20px" src="https://th.bing.com/th/id/OIP.NIDbXqvT7zXPNJyqRMUXHgHaHa?w=218&h=218&c=7&r=0&o=5&pid=1.7" alt=""></a>
+        </button>
+        </div>
+        <div><p>Already have a Salesforce Developer Environment?</p></div>
+         <!-- <input type="submit" name="" value="Login" onClick="login()"> -->
+        <button onClick="login()" class="ls">
+            <a href="#"><b>Login</b></a>
+        </button>
+
+    </form>
+    </div>
+</div>
+<script>
+    function login(){
+        window.location="login.html";
+    }
+ </script>
+
+</body>
+</html>
